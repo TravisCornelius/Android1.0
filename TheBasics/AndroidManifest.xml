@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.mybringback.thebasics"
+	android:versionCode="1" android:versionName="1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<uses-sdk android:minSdkVersion="8" />
+	<uses-permission android:name="android.permission.SET_WALLPAPER"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+		<activity 
+		android:name="com.google.ads.AdActivity"
+		android:configChanges="keyboard|keyboardHidden|orientation"
+		></activity>
+		<activity android:name=".main" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".menu" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.mybringback.thebasics.MENU" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".TutorialOne" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.mybringback.thebasics.TUTORIALONE" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".TutorialTwo" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="com.mybringback.thebasics.TUTORIALTWO" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".TutorialThree" android:label="@string/app_name"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="com.mybringback.thebasics.TUTORIALTHREE" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".TutorialFour" android:label="@string/app_name"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="com.mybringback.thebasics.TUTORIALFOUR" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".SurfaceViewExample" android:label="@string/app_name"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="com.mybringback.thebasics.SURFACEVIEWEXAMPLE" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".Sweet" android:label="@string/app_name"
+			android:theme="@android:style/Theme.Dialog">
+			<intent-filter>
+				<action android:name="com.mybringback.thebasics.SWEET" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+	</application>
+
+</manifest>
